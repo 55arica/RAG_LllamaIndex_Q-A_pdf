@@ -55,7 +55,9 @@ embed_model = LangchainEmbedding(hf_embeddings)
 Settings.llm = llm
 Settings.embed_model = embed_model
 Settings.chunk_size = 1024
-
+#---------------------------------------------------------------------------------------------
+# without setting
+# index = VectorStoreIndex.from_documents(documents, service_context=ServiceContext.from_defaults(llm=llm, embed_model=embed_model))
 # --------------------------------------------------------------------------------------------
 
 index = VectorStoreIndex.from_documents(documents)
