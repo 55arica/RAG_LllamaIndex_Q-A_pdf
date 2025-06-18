@@ -5,6 +5,9 @@
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.llms.huggingface import HuggingFaceLLM
 from llama_index.core.prompts import PromptTemplate
+from llama_index.embeddings.langchain import LangchainEmbedding
+from langchain.embeddings import HuggingFaceEmbeddings
+from llama_index.core.settings import Settings
 
 # --------------------------------------------------------------------------------------------
 
@@ -39,8 +42,6 @@ llm = HuggingFaceLLM(
 # # from llama_index.embeddings.langchain import LangchainEmbedding
 # embed_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
-from llama_index.embeddings.langchain import LangchainEmbedding
-from langchain.embeddings import HuggingFaceEmbeddings
 
 # Load a sentence-transformers model
 hf_embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
@@ -50,7 +51,6 @@ embed_model = LangchainEmbedding(hf_embeddings)
 
 # --------------------------------------------------------------------------------------------
 
-from llama_index.core.settings import Settings
 
 Settings.llm = llm
 Settings.embed_model = embed_model
