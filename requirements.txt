@@ -1,0 +1,9 @@
+pypdf==5.6.0
+transformers==4.52.4
+accelerate==1.7.0
+bitsandbytes==0.46.0
+llama-index==0.12.42
+sentence-transformers==4.1.0
+llama-index-llms-huggingface==0.5.0
+llama-index-embeddings-langchain==0.3.0
+langchain-community==0.3.25
