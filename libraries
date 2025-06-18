@@ -1,0 +1,5 @@
+!pip install pypdf
+!pip install transformers accelerate bitsandbytes llama_index sentence_transformers
+!pip install llama-index-llms-huggingface
+!pip install llama-index-embeddings-langchain sentence-transformers
+!pip install -U langchain-community
