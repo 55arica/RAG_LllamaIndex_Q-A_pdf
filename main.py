@@ -2,7 +2,7 @@
 # import llama_index
 
 # importlib.reload(llama_index)
-from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, ServiceContext
+from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.llms.huggingface import HuggingFaceLLM
 from llama_index.core.prompts import PromptTemplate
 
