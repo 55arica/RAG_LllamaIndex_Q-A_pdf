@@ -64,7 +64,7 @@ query_engine = index.as_query_engine()
 
 # --------------------------------------------------------------------------------------------
 
-response = query_engine.query("Who is the FBI authorized to assist with investigations according to this regulation")
+response = query_engine.query(" ")
 print(response)
 
 
